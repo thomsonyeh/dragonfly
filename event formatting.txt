@@ -1,0 +1,10 @@
+BULLET:
+0. time (int)
+1. number of bullets (int)
+2. bullet type (string)
+
+
+SECTION:
+0. time (int)
+1. duration (int)
+2. average loudness (int)

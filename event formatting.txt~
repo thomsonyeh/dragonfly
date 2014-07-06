@@ -1,0 +1,5 @@
+BULLET:
+0. time (int)
+1. number of bullets (int)
+2. bullet type (string)
+3. bullet size (int)

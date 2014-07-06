@@ -1,0 +1,58 @@
+class Event
+{
+	String type;
+	int time;	
+	String[] params;
+	
+	void Event(string t, int ti, ArrayList pl)
+	{
+		type = t;
+		time = ti;
+		params = new String[pl.size()];
+		//iterate over the items of pl, IN ORDER
+		//and put them in params
+	}
+
+	void do()
+	{
+		if (type = "bullet")
+		{
+			// do bullet stuff
+		}
+		
+		// more if statements
+	}
+}
+
+---------------------------------------------------------
+
+parse(s)
+{
+	eventList = ArrayList();	
+	while(s.len >= 2)
+	{
+		e.add(peel(s));
+	}
+}
+
+peel(s)
+{
+	a = ArrayList();	
+	while(s.indexOf("<>")!=0) \\ugly delimiter stuff
+	{
+		p = s.indexOf("::");
+		ss = s.substring(0, p);
+		s = s.substring(p+2);
+		a.add(ss);
+	}
+	if (s.len >= 2)
+		s = s.substring(2);	
+	return convertToEvent(a);
+}
+
+convertToEvent(a)
+{
+	t = a.get(0);
+	a.remove(0);
+	return Event(t, a)
+}
